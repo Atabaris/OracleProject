@@ -17,7 +17,7 @@ namespace WebApplication1
 
         protected void button_start_Click(object sender, EventArgs e)
         {
-            string oradb = "Data Source=ORCL;User Id=hr;Password=hr;";
+            string oradb = "Data Source=XE;User Id=SYSTEM;Password=129200Berk;";
 
             OracleConnection conn = new OracleConnection(oradb); // C#
 
