@@ -19,6 +19,11 @@
         <asp:Label ID="Label1" runat="server" Height="30px" style="text-align: right; margin-left: 27px" Width="303px"></asp:Label>
     
     </div>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+        </p>
     </form>
 </body>
 </html>
