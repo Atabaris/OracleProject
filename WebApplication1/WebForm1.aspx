@@ -20,10 +20,10 @@
     
     </div>
         <p>
-            &nbsp;</p>
-        <p>
-            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Example"></asp:Label>
         </p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>
