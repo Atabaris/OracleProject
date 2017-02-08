@@ -17,19 +17,29 @@ namespace WebApplication1
 
         protected void button_start_Click(object sender, EventArgs e)
         {
-            string oradb = "Data Source=XE;User Id=SYSTEM;Password=129200Berk;";
+            //string oradb = "Data Source=XE;User Id=SYSTEM;Password=129200Berk;";
 
-            OracleConnection conn = new OracleConnection(oradb); // C#
+            //OracleConnection conn = new OracleConnection(oradb); // C#
 
-            conn.Open();
-            if (conn != null)
-            {
-                Label1.Text = "You are connected to DB!";
-            }else
-            {
-                Label1.Text = "You could not  connected to DB!";
-            }
-            conn.Dispose();
+            //conn.Open();
+            //if (conn != null)
+            //{
+            //    Label1.Text = "You are connected to DB!";
+            //}else
+            //{
+            //    Label1.Text = "You could not  connected to DB!";
+            //}
+            //conn.Dispose();
+            //Response.Redirect("~/WebForm2.aspx");
+
+//            OracleDB classı içine fonksiyonlar  --atabarış
+
+//Admin user sayfası ayır --berk görev
+
+// Admin sayfası--ata
+
+//User sayfası--berk
+
         }
     }
 }
