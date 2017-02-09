@@ -23,7 +23,7 @@
     
         
     
-        <asp:Button ID="Button1" runat="server" style="top: 380px; left: 620px; position: absolute; height: 90px; width: 260px" Text="Enter" />
+        <asp:Button ID="Button1" runat="server" style="top: 588px; left: 610px; position: absolute; height: 90px; width: 260px" Text="Enter" />
     
         
     
