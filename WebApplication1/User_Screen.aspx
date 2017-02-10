@@ -17,9 +17,9 @@
 </head>
 <body style="width: 1487px">
     <form id="form1" runat="server">
-    <div style="top: 15px; left: 10px; position: absolute; height: 613px; width: 1920px">
+    <div style="top: 15px; left: 0px; position: absolute; height: 613px; width: 1880px">
     
-        <asp:Button ID="Button1" runat="server" style="top: 326px; left: 870px; position: absolute; height: 26px; width: 185px" Text="Enter" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" style="top: 412px; left: 866px; position: absolute; height: 26px; width: 185px" Text="Enter" OnClick="Button1_Click" />
     
         <table aria-orientation="horizontal" style="width: 20%; top: 75px; left: 758px; position: absolute; height: 56px; border-bottom:1pt solid black; border-top:1pt solid black" >
             <tr>
@@ -61,20 +61,25 @@
                     <asp:TextBox ID="Text_UserFaterName" runat="server" Width="175px"></asp:TextBox>
                  </td>
             </tr>
+             <tr>
+                <td class="auto-style2"><b>Enter Number</b></td>
+                <td>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="175px"></asp:TextBox>
+                 </td>
+            </tr>
         </table>
     
-    
-        <asp:Label ID="Label1" runat="server" style="top: -1px; left: 185px; position: absolute; height: 36px; width: 119px; color:white; font-size:36px; font-weight:bold" Text="HOME"></asp:Label>
-    
-    
+         <asp:Image ID="Image1" runat="server" Height="66px" Width="1920px" src="http://www.dreamtemplate.com/dreamcodes/bg_images/color/c4.jpg" style="margin-left: 0px; margin-top: -25px;"/>
+       <a href ="Admin.aspx"> <asp:Label ID="HOME_page"  runat="server" style="top: 4px; left: 121px; position: absolute; height: 36px; width: 89px; color:white; font-size:20px; font-weight:bold" Text="HOME"></asp:Label> </a>
+       <a href="Admin.aspx"> <asp:Label ID="ABOUTUS_page" runat="server" style="top: 4px; position: absolute; height: 36px; width: 151px; color:white; font-size:20px; font-weight:bold; right: 1444px;" Text="ABOUT US"></asp:Label>  </a>  
+       <a href ="Admin.aspx"><asp:Label ID="CONTACTUS_page" runat="server" style="top: 4px; left: 1311px; position: absolute; height: 36px; width: 176px; color:white; font-size:20px; font-weight:bold" Text="CONTACT US"></asp:Label> </a>
+       <a href ="Admin.aspx"> <asp:Label ID="SETTINGS_page" runat="server" style="top: 4px; left: 1600px; position: absolute; height: 36px; width: 136px; color:white; font-size:20px; font-weight:bold" Text="SETTINGS"></asp:Label>        </a>                      
+        <asp:Label ID="Protection" runat="server" style="top: 750px; left: 594px; position: absolute; height: 19px; width: 781px" Text="Sitede yer alan tüm içeriğin hakları saklıdır. <b>2017 © AB</b> - Site Sahibi izni olmaksızın kullanılamaz. Bu bir <b>AtaBerk</b> yapımıdır."></asp:Label>
         
-    
-    
+       <asp:Image ID="Image2" runat="server" style="top: -5px; left: 0px; position: absolute; height: 84px; width: 92px" src="http://kurumsal.tamindir.com/wp-content/uploads/2014/11/kurumsal_tamindir_1764.png"/>
+       <asp:Label ID="SECURITY_number" runat="server" style="font-size:25px;font-weight:bold;top: 362px; left: 921px; position: absolute; height: 34px; width: 74px" Text="null"></asp:Label>
     </div>
-
-         
-
-         <asp:Image ID="Image1" runat="server" Height="66px" Width="1980px" src="http://www.dreamtemplate.com/dreamcodes/bg_images/color/c4.jpg" style="margin-left: 0px"/>
+        
     </form>
 </body>
 </html>
