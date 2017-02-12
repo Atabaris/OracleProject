@@ -110,6 +110,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Reservation_Screen.aspx" />
     <Content Include="User_Screen.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -124,6 +125,13 @@
     </Compile>
     <Compile Include="OracleDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation_Screen.aspx.cs">
+      <DependentUpon>Reservation_Screen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reservation_Screen.aspx.designer.cs">
+      <DependentUpon>Reservation_Screen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User_Screen.aspx.cs">
       <DependentUpon>User_Screen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
