@@ -29,8 +29,8 @@
                 </td>
             </tr>
         </table>
-        <asp:Image ID="Image1" runat="server" Height="66px" Width="1920px" src="http://www.dreamtemplate.com/dreamcodes/bg_images/color/c4.jpg" style="margin-left: 0px; margin-top: -25px;"/>
-         <asp:Image ID="Image2" runat="server" style="top: -5px; left: 0px; position: absolute; height: 84px; width: 92px" src="http://kurumsal.tamindir.com/wp-content/uploads/2014/11/kurumsal_tamindir_1764.png"/>       
+        <asp:Image ID="Image1" runat="server" Height="66px" Width="1920px" src="images/c4.jpg" style="margin-left: 0px; margin-top: -25px;"/>
+         <asp:Image ID="Image2" runat="server" style="top: -5px; left: 0px; position: absolute; height: 84px; width: 92px" src="images/c5.png"/>       
    </div>
     </form>
 </body>
