@@ -35,20 +35,14 @@ namespace WebApplication1
         }
         private bool check_Pattern()
         {
-            bool matched;
-            string pattern = @"[a-zA-Z0-9]+";
+            bool matched=false;
+            string pattern = @"[a-z0-9]+";
             string user_id = text_UserID.ToString();
             string user_password = text_Password.ToString();
-            Regex regex = new Regex(pattern);
-            Match match_id = regex.Match(user_id);
-            Match match_password = regex.Match(user_password);
-            if (match_id.Success && match_password.Success)
-            {
-                matched = true;
-            }else
-            {
-                matched = false;
-            }
+           /* find solution for proper regex */
+            
+            
+            
             return matched;
         }
         private void give_Message(int key_value)
