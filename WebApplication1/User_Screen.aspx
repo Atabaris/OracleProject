@@ -69,14 +69,14 @@
             </tr>
         </table>
     
-         <asp:Image ID="Image1" runat="server" Height="66px" Width="1920px" src="http://www.dreamtemplate.com/dreamcodes/bg_images/color/c4.jpg" style="margin-left: 0px; margin-top: -25px;"/>
+         <asp:Image ID="Image1" runat="server" Height="66px" Width="1920px" src="Images/c4.jpg" style="margin-left: 0px; margin-top: -25px;"/>
        <a href ="Admin.aspx"> <asp:Label ID="HOME_page"  runat="server" style="top: 4px; left: 121px; position: absolute; height: 36px; width: 89px; color:white; font-size:20px; font-weight:bold" Text="HOME"></asp:Label> </a>
        <a href="Admin.aspx"> <asp:Label ID="ABOUTUS_page" runat="server" style="top: 4px; position: absolute; height: 36px; width: 151px; color:white; font-size:20px; font-weight:bold; right: 1444px;" Text="ABOUT US"></asp:Label>  </a>  
        <a href ="Admin.aspx"><asp:Label ID="CONTACTUS_page" runat="server" style="top: 4px; left: 1311px; position: absolute; height: 36px; width: 176px; color:white; font-size:20px; font-weight:bold" Text="CONTACT US"></asp:Label> </a>
        <a href ="Admin.aspx"> <asp:Label ID="SETTINGS_page" runat="server" style="top: 4px; left: 1600px; position: absolute; height: 36px; width: 136px; color:white; font-size:20px; font-weight:bold" Text="SETTINGS"></asp:Label>        </a>                      
         <asp:Label ID="Protection" runat="server" style="top: 750px; left: 594px; position: absolute; height: 19px; width: 781px" Text="Sitede yer alan tüm içeriğin hakları saklıdır. <b>2017 © AB</b> - Site Sahibi izni olmaksızın kullanılamaz. Bu bir <b>AtaBerk</b> yapımıdır."></asp:Label>
         
-       <asp:Image ID="Image2" runat="server" style="top: -5px; left: 0px; position: absolute; height: 84px; width: 92px" src="http://kurumsal.tamindir.com/wp-content/uploads/2014/11/kurumsal_tamindir_1764.png"/>
+       <asp:Image ID="Image2" runat="server" style="top: -5px; left: 0px; position: absolute; height: 84px; width: 92px" src="Images/c5.png"/>
        <asp:Label ID="SECURITY_number" runat="server" style="font-size:25px;font-weight:bold;top: 362px; left: 921px; position: absolute; height: 34px; width: 74px" Text="null"></asp:Label>
     </div>
         
