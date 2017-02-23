@@ -10,21 +10,21 @@ namespace WebApplication1
 {
     public partial class Admin : System.Web.UI.Page
     {
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         protected void button_enter_Click(object sender, EventArgs e)
         {
             int value = get_Info();
             give_Message(value);
-                   
+
         }
         private bool check_Information()
         {
-            bool found=false;
+            bool found = false;
             string user_id = text_UserID.ToString();
             string user_password = text_Password.ToString();
 
@@ -35,22 +35,26 @@ namespace WebApplication1
         }
         private bool check_Pattern()
         {
-            bool matched=false;
-            string pattern = @"[a-z0-9]+";
-            string user_id = text_UserID.ToString();
-            string user_password = text_Password.ToString();
-           /* find solution for proper regex */
-            
-            
-            
+            bool matched = false;
+            string pattern = @"^[a-z0-9]+$";
+            string user_id = text_UserID.Text.ToString();
+            string user_password = text_Password.Text.ToString();
+            Regex regex = new Regex(pattern);
+            if (regex.IsMatch(user_id))
+            {
+                matched = true;
+            }
+
             return matched;
+
         }
         private void give_Message(int key_value)
         {
             if (key_value == 0)
             {
                 label_error.Text = "";
-            }else if (key_value == 1)
+            }
+            else if (key_value == 1)
             {
                 label_error.Text = "Do not use Non English characters!";
             }
@@ -60,7 +64,7 @@ namespace WebApplication1
             }
             else
             {
-                label_error.Text = " Error check the code !key value = "+key_value+"";
+                label_error.Text = " Error check the code !key value = " + key_value + "";
             }
         }
         private int get_Info()
