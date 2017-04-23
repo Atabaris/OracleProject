@@ -68,16 +68,16 @@
         <asp:ImageButton CssClass="RightArrow" class="img-responsive"  ID="ImageButton4" runat="server" Height="222px"  Width="248px" src="Images/teeth.jpg" alt="" OnClick="ImageButton1_Click3"/>
         </div>
         <div class="grow picCircle" style =" top: 584px; left: 660px">
-        <asp:ImageButton CssClass="RightArrow" class="img-responsive"  ID="ImageButton5" runat="server" Height="222px"  Width="248px" src="Images/back.jpg" alt="" OnClick="ImageButton1_Click3"/>
+        <asp:ImageButton CssClass="RightArrow" class="img-responsive"  ID="ImageButton5" runat="server" Height="222px"  Width="248px" src="Images/back.jpg" alt="" OnClick="ImageButton1_Click5"/>
         </div>
         <div class="grow picCircle" style =" top: 584px; left: 1010px">
-        <asp:ImageButton CssClass="RightArrow" class="img-responsive"  ID="ImageButton6" runat="server" Height="222px"  Width="248px" src="Images/hair.jpg" alt="" OnClick="ImageButton1_Click3"/>                       
+        <asp:ImageButton CssClass="RightArrow" class="img-responsive"  ID="ImageButton6" runat="server" Height="222px"  Width="248px" src="Images/hair.jpg" alt="" OnClick="ImageButton1_Click6"/>                       
         </div>        
         <div class="grow picCircle" style =" top: 362px; left: 1360px">
-        <asp:ImageButton CssClass="RightArrow" class="img-responsive"  ID="ImageButton7" runat="server" Height="222px"  Width="248px" src="Images/acne.png" alt="" OnClick="ImageButton1_Click3"/>                       
+        <asp:ImageButton CssClass="RightArrow" class="img-responsive"  ID="ImageButton7" runat="server" Height="222px"  Width="248px" src="Images/acne.png" alt="" OnClick="ImageButton1_Click7"/>                       
         </div> 
        <div class="grow picCircle" style =" top: 362px; left: 310px">
-        <asp:ImageButton CssClass="RightArrow" class="img-responsive"  ID="ImageButton8" runat="server" Height="222px"  Width="248px" src="Images/cold.jpg" alt="" OnClick="ImageButton1_Click3"/>                       
+        <asp:ImageButton CssClass="RightArrow" class="img-responsive"  ID="ImageButton8" runat="server" Height="222px"  Width="248px" src="Images/cold.jpg" alt="" OnClick="ImageButton1_Click8"/>                       
         </div> 
         
     </div>                 

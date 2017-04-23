@@ -103,6 +103,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Information_Screen.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -153,6 +154,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Information_Screen.aspx.cs">
+      <DependentUpon>Information_Screen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Information_Screen.aspx.designer.cs">
+      <DependentUpon>Information_Screen.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
