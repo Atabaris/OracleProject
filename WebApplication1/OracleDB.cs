@@ -22,7 +22,7 @@ namespace WebApplication1
             string connection_string = null;
             if (user_name == "Ata")
             {
-                connection_string = "Data Source=XE;User Id=SYSTEM;Password=password;";
+                connection_string = "Data Source=XE;User Id=e_reservation;Password=password;";
             }
             else if (user_name == "Berk")
             {
@@ -50,7 +50,7 @@ namespace WebApplication1
         {
             if (connection != null)
             {
-                System.Diagnostics.Debug.WriteLine("Connection closed!");
+                connection.Close();
             }
             else
             {
@@ -61,12 +61,12 @@ namespace WebApplication1
         public void disposeConnection()
         {
             if (connection != null)
-            { 
-                System.Diagnostics.Debug.WriteLine("Connection could not disposed. Connection is null !");
+            {
+                connection.Dispose();              
             }
             else
             {
-                connection.Dispose();
+                System.Diagnostics.Debug.WriteLine("Connection could not disposed. Connection is null !");
             }
         }
 
