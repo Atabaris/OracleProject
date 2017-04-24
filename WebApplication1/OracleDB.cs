@@ -26,7 +26,7 @@ namespace WebApplication1
             }
             else if (user_name == "Berk")
             {
-                connection_string = "Data Source=XE;User Id=SYSTEM;Password=129200Berk";
+                connection_string = "Data Source=XE;User Id=berk;Password=1234";
             }
             else
             {
@@ -54,11 +54,12 @@ namespace WebApplication1
             }
             else
             {
+                disposeConnection();
                 System.Diagnostics.Debug.WriteLine("Connection could not closed. Connection is null !");
             }
         }
 
-        public void disposeConnection()
+        private void disposeConnection()
         {
             if (connection != null)
             {
