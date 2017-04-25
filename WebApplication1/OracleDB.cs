@@ -51,10 +51,10 @@ namespace WebApplication1
             if (connection != null)
             {
                 connection.Close();
+                disposeConnection();
             }
             else
             {
-                disposeConnection();
                 System.Diagnostics.Debug.WriteLine("Connection could not closed. Connection is null !");
             }
         }
