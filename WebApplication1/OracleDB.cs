@@ -26,7 +26,7 @@ namespace WebApplication1
             }
             else if (user_name == "Berk")
             {
-                connection_string = "Data Source=XE;User Id=berk;Password=1234";
+                connection_string = "Data Source=XE;User Id=e_reservation;Password=1234";
             }
             else
             {
