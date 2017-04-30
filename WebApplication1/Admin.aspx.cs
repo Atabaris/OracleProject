@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -25,18 +26,30 @@ namespace WebApplication1
         private bool check_Information()
         {
             bool found = false;
-            string user_id = text_UserID.ToString();
-            string user_password = text_Password.ToString();
+            string user_id = text_UserID.Text;
+            string user_password = text_Password.Text;
 
             /*SQL code part for check info */
-
-
+            string sql = "SELECT  TO_CHAR(COUNT(*)) FROM ADMİN WHERE ID='" + user_id + "' AND PASSWORD='"+user_password+"'";
+            string exist=null;
+            OracleDB db = new OracleDB("Ata");
+            db.openConnection();
+            OracleDataReader reader = db.getDataFromDB(sql);
+            while (reader.Read())
+            {
+                exist = reader.GetString(0);
+            }
+            if (exist.Equals("1"))
+            {
+                found = true;
+            }
+            db.closeConnection();
             return found;
         }
         private bool check_Pattern()
         {
             bool matched = false;
-            string pattern = @"^[a-z0-9]+$";
+            string pattern = @"^[a-zA-Z0-9]+$";
             string user_id = text_UserID.Text.ToString();
             string user_password = text_Password.Text.ToString();
             Regex regex = new Regex(pattern);

@@ -13,12 +13,16 @@ namespace WebApplication1
     {
 
         Random rand = new Random();
- 
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-                int number = rand.Next(1000, 9999);
-                SECURITY_number.Text = number.ToString();
-
+            int number = rand.Next(1000, 9999);
+            SECURITY_number.Text = number.ToString();
+            if (!Page.IsPostBack)
+            {                
+                ViewState["sec_num"] = SECURITY_number.Text;
+            }
+                
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -30,7 +34,8 @@ namespace WebApplication1
             string user_name = Text_UserName.Text;
             string user_surname = Text_UserSurname.Text;
             string user_father_name = Text_UserFaterName.Text;
-            string user_sec_number = Text_UserNumber.Text;
+            string user_sec_num = Text_UserNumber.Text;
+            string system_sec_num = ViewState["sec_num"] as string;
             string result=null;
             OracleDB db = new OracleDB("Ata");
             db.openConnection();
@@ -40,7 +45,7 @@ namespace WebApplication1
             {
                 result = reader.GetString(0);
             }
-            if (result.Equals("TRUE"))
+            if (result.Equals("TRUE")&&user_sec_num.Equals(system_sec_num))
             {
                 db.closeConnection();
                 Response.Redirect("~/Reservation_Screen.aspx?id=" + user_id + "&birth=" + user_birth + "&phone="
@@ -49,6 +54,7 @@ namespace WebApplication1
             else
             {
                 EROR_LABEL.Text = "CHECK YOUR INFORMATION !";
+                ViewState["sec_num"] = SECURITY_number.Text;
                 db.closeConnection();
             }
             
