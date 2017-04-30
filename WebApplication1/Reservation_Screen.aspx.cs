@@ -25,35 +25,35 @@ namespace WebApplication1
 
         protected void ImageButton1_Click1(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~/Information_Screen.aspx?id="+id+"&birth="+birth+"&phone="+phone+"&name="+name+"&surname="+surname+"&father_name="+father_name + "&polyclinic=kulak");
+            Response.Redirect("~/Information_Screen.aspx?id="+id+"&birth="+birth+"&phone="+phone+"&name="+name+"&surname="+surname+"&father_name="+father_name + "&polyclinic=Otology");
         }
         protected void ImageButton1_Click2(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name+"&polyclinic=göz");
+            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name+ "&polyclinic=Ophthalmology");
         }   
         protected void ImageButton1_Click3(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=agız");
+            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=Dentalogy");
         }
         protected void ImageButton1_Click4(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=burun");
+            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=Oralogy");
         }
         protected void ImageButton1_Click5(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=bel");
+            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=Orthopedy");
         }
         protected void ImageButton1_Click6(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=saç");
+            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=Dermatology");
         }
         protected void ImageButton1_Click7(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=yüz");
+            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=Dermatology");
         }
         protected void ImageButton1_Click8(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=üsütme");
+            Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name + "&polyclinic=Rhinology");
         }
     }
 }
