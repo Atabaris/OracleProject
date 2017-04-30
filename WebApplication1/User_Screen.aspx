@@ -78,6 +78,7 @@
         
        <asp:Image ID="Image2" runat="server" style="top: -5px; left: 0px; position: absolute; height: 84px; width: 92px" src="Images/c5.png"/>
        <asp:Label ID="SECURITY_number" runat="server" style="font-size:25px;font-weight:bold;top: 362px; left: 921px; position: absolute; height: 34px; width: 74px" Text="null"></asp:Label>
+        <asp:Label ID="EROR_LABEL" runat="server" ForeColor="#CC3300" style="z-index: 1; left: 764px; top: 475px; position: absolute; width: 377px; height: 50px" Text="Label"></asp:Label>
     </div>
         
     </form>
