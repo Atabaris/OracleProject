@@ -8,14 +8,17 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication1
 {
+
     public partial class User_Screen : System.Web.UI.Page
     {
+
+        Random rand = new Random();
+ 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Random rand = new Random();
-            int number = rand.Next(1000,9999);
-            SECURITY_number.Text = ""+number;
-            
+                int number = rand.Next(1000, 9999);
+                SECURITY_number.Text = number.ToString();
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -27,6 +30,7 @@ namespace WebApplication1
             string user_name = Text_UserName.Text;
             string user_surname = Text_UserSurname.Text;
             string user_father_name = Text_UserFaterName.Text;
+            string user_sec_number = Text_UserNumber.Text;
             string result=null;
             OracleDB db = new OracleDB("Ata");
             db.openConnection();
@@ -36,20 +40,19 @@ namespace WebApplication1
             {
                 result = reader.GetString(0);
             }
-
             if (result.Equals("TRUE"))
             {
                 db.closeConnection();
-                Response.Redirect("~/Reservation_Screen.aspx?user_id_label=" + user_id + "&user_birth_label=" + user_birth + "&user_phone_label="
-                + user_phone + "&user_name_label=" + user_name + "&user_surname_label=" + user_surname + "&user_fathername_label=" + user_father_name); 
+                Response.Redirect("~/Reservation_Screen.aspx?id=" + user_id + "&birth=" + user_birth + "&phone="
+                + user_phone + "&name=" + user_name + "&surname=" + user_surname + "&father_name=" + user_father_name); 
             }
             else
             {
                 EROR_LABEL.Text = "CHECK YOUR INFORMATION !";
                 db.closeConnection();
             }
-
             
         }
+
     }
 }

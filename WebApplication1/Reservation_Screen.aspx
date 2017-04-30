@@ -45,7 +45,7 @@
     <form id="form1" runat="server">
     <div>
         <asp:Image ID="Image1"  runat="server" Height="78px" Width="1944px" src="Images/c4.jpg" style="margin-left: -10px; margin-top: -25px;"/>
-        <asp:Label ID="Error_Label" runat="server" ForeColor="#CC3300" style="z-index: 1; left: 655px; top: 81px; position: absolute; width: 596px" Text="Label"></asp:Label>
+        <asp:Label ID="Error_Label" runat="server" ForeColor="#CC3300" style="z-index: 1; left: 655px; top: 81px; position: absolute; width: 596px"></asp:Label>
         <asp:Image ID="Image3"  runat="server" Height="78px" Width="1944px" src="Images/c4.jpg" style="margin-left: -10px; margin-top: 250px;"/> 
         <asp:Image ID="Image4"  runat="server" Height="78px" Width="1944px" src="Images/c4.jpg" style="margin-left: -10px; margin-top: 150px;"/>
         <asp:Image ID="Image2" runat="server" src="Images/dark.jpg" style="margin-left: -10px; margin-top: -10px; top: 58px; left: -9px; position: absolute; width: 1973px; height: 22px;"/>

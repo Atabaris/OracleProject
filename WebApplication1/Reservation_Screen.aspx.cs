@@ -15,12 +15,12 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            id = Request.QueryString["user_id_label"].ToString();
-            birth = Request.QueryString["user_birth_label"].ToString();
-            phone = Request.QueryString["user_phone_label"].ToString();
-            name = Request.QueryString["user_name_label"].ToString();
-            surname = Request.QueryString["user_surname_label"].ToString();
-            father_name = Request.QueryString["user_fathername_label"].ToString();
+            id = Request.QueryString["id"].ToString();
+            birth = Request.QueryString["birth"].ToString();
+            phone = Request.QueryString["phone"].ToString();
+            name = Request.QueryString["name"].ToString();
+            surname = Request.QueryString["surname"].ToString();
+            father_name = Request.QueryString["father_name"].ToString();
             db = new OracleDB("Ata");
             db.openConnection();
         }
@@ -69,7 +69,7 @@ namespace WebApplication1
         private void send_Info(string pol_name)
         {
             Response.Redirect("~/Information_Screen.aspx?id=" + id + "&birth=" + birth + "&phone=" + phone + "&name=" + name + "&surname=" + surname + "&father_name=" + father_name
-                + "&polyclinic=" + pol_name + "&doctor_name" + doctor_name);
+                + "&polyclinic=" + pol_name + "&doctor_name=" + doctor_name);
         }
         private void getOracle(string pol_name)
         {
@@ -87,21 +87,19 @@ namespace WebApplication1
             doctor_name = d_name + " " + d_surname;
             string result = null;
             sql = "SELECT CREATE_PDP_FUNC('" + doc_id + "','" + pol_name + "','" + id + "') FROM DUAL";
-            System.Diagnostics.Debug.WriteLine("ERROR!!!!!!!!   " + sql);
-            
-            while (reader.Read())
+            OracleDataReader reader1 = db.getDataFromDB(sql);
+            while (reader1.Read())
             {
-                result = reader.GetString(0);
+                result = reader1.GetString(0);
             }
-            System.Diagnostics.Debug.WriteLine("ERROR!!!!!!!! READER  " + result);
             if (result.Equals("TRUE"))
             {
 
                 sql = "SELECT CREATE_RESERVATION_FUNC('" + id + "') FROM DUAL";
-                reader = db.getDataFromDB(sql);
-                while (reader.Read())
+                OracleDataReader reader2 = db.getDataFromDB(sql);
+                while (reader2.Read())
                 {
-                    result = reader.GetString(0);
+                    result = reader2.GetString(0);
                 }
                 if (result.Equals("TRUE"))
                 {

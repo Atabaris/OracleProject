@@ -85,13 +85,13 @@ namespace WebApplication1 {
         protected global::System.Web.UI.WebControls.TextBox Text_UserFaterName;
         
         /// <summary>
-        /// TextBox1 control.
+        /// Text_UserNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox Text_UserNumber;
         
         /// <summary>
         /// Image1 control.
