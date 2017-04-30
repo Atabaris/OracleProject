@@ -113,7 +113,7 @@ namespace WebApplication1
             }
             else
             {
-                Error_Label.Text = "Database Error";
+                Error_Label.Text = "Could not take reservation !";
             }
 
         }

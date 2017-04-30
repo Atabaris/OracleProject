@@ -11,7 +11,7 @@ namespace WebApplication1
 {
     public partial class Admin : System.Web.UI.Page
     {
-
+        string admin_id;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -41,6 +41,7 @@ namespace WebApplication1
             }
             if (exist.Equals("1"))
             {
+                admin_id = user_id;
                 found = true;
             }
             db.closeConnection();
@@ -89,7 +90,7 @@ namespace WebApplication1
                 passed = check_Information();
                 if (passed == true)
                 {
-                    Response.Redirect("~/AdminPanel.aspx");
+                    Response.Redirect("~/AdminPanel.aspx?id="+admin_id);
                 }
                 else
                 {
