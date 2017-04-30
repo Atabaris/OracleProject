@@ -87,11 +87,13 @@ namespace WebApplication1
             doctor_name = d_name + " " + d_surname;
             string result = null;
             sql = "SELECT CREATE_PDP_FUNC('" + doc_id + "','" + pol_name + "','" + id + "') FROM DUAL";
-
+            System.Diagnostics.Debug.WriteLine("ERROR!!!!!!!!   " + sql);
+            
             while (reader.Read())
             {
                 result = reader.GetString(0);
             }
+            System.Diagnostics.Debug.WriteLine("ERROR!!!!!!!! READER  " + result);
             if (result.Equals("TRUE"))
             {
 

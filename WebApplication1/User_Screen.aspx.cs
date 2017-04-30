@@ -30,7 +30,7 @@ namespace WebApplication1
             string result=null;
             OracleDB db = new OracleDB("Ata");
             db.openConnection();
-            string sql = "SELECT CHECK_PATIENT_INFO('"+user_id+"','"+user_birth+"','"+user_name+"','"+user_surname+"','"+user_father_name+"')";
+            string sql = "SELECT CHECK_PATIENT_INFO('"+user_id+"','"+user_birth+"','"+user_name+"','"+user_surname+"','"+user_father_name+"') FROM DUAL";
             OracleDataReader reader = db.getDataFromDB(sql);
             while (reader.Read())
             {
